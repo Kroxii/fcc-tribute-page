@@ -1,11 +1,19 @@
+:root {
+    --blue: #0078d7;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #333333;
+    --yellow: #ffcc00;
+  }
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--white);
+    color: var(--grey);
 }
 
 *,
@@ -17,9 +25,9 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #0078d7;
+    background-color: var(--blue);
     color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--black 0.1);
 }
 
 header h1 {
@@ -48,22 +56,22 @@ header h1 {
     width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--black 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #img-div img:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px var(--black 0.2);
 }
 
 #tribute-info {
     flex: 2;
     max-width: 600px;
-    background-color: #fff;
+    background-color: var(--white);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--black 0.1);
 }
 
 #tribute-info h2 {
@@ -82,20 +90,20 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
-    background-color: #0078d7;
+    background-color: var(--blue);
     color: #fff;
     font-size: 0.9rem;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 4px var(--black 0.1);
     width: 100%;
 }
 
 footer a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #ffcc00;
+    color: var(--yellow);
 }
